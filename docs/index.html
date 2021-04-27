@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Private Message</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
+
+	<!-- Fontawesome Icon font -->
+	<link rel="stylesheet" href="css/font/style.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Magnific popup css -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="css/slick/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div class="preloader">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+
+<section class="hero-area overlay">
+	<div class="block">
+		<h1>Dark Image Chat</h1>
+		<p>Technology of steganography for secret message</p>
+		<a data-scroll href="#encode" class="btn btn-transparent">Encode Message</a>
+		<a data-scroll href="#decode" class="btn btn-transparent">Decode Message</a>
+	</div>
+</section>
+
+		<section class="bg-one about section" id="encode">
+			<div class="container">
+				<div class="row">
+				
+					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+						<h2>Encode <span class="color">Message</span> </h2>
+						<div class="border"></div>
+					</div>
+
+					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+						<div class="form-group">
+							<input type="file" class="form-control" id="Efile" onchange="encodePI();">
+						</div>
+						<img class="img-responsive" src="img/preview-not-available.png" id="Egambar">
+					</div>
+
+					<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+							<div class="form-group">
+								<textarea placeholder="Secreat Message" class="form-control" id="Epesan"></textarea>	
+							</div>
+							<div id="cf-submit">
+								<input type="submit" id="contact-submit Bencode" class="btn btn-transparent col-lg-12" onclick="encode()" value="ENCODE">
+							</div>	
+					</div>
+					
+				</div>
+			</div>
+		</section>  
+
+<section class="section  about section bg-dark" id="decode">
+	<div class="container">
+		<div class="row">
+		
+			<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+				<h2>Decode <span class="color">Message</span> </h2>
+				<div class="border"></div>
+			</div>
+
+			<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms">
+				<div class="form-group">
+					<textarea placeholder="Secreat Message" class="form-control" id="Dpesan" readonly></textarea>	
+				</div>
+			</div>
+
+			<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<div class="form-group">
+					<input type="file" class="form-control" id="Dfile" onchange="decodePI();">
+				</div>
+				<img class="img-responsive" src="img/preview-not-available.png" id="Dgambar">		
+			</div>
+			
+		</div>
+	</div>
+</section>
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- Smooth Scroll -->
+		<script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+		<!-- Magnific popup -->
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Sticky Nav -->
+		<script type="text/javascript" src="js/jquery.sticky.js"></script>
+		<!-- Steganograpy -->
+		<script src="js/steganography.min.js"></script>
+		<!-- wow.min Script -->
+		<script type="text/javascript" src="plugins/wow/dist/wow.min.js"></script>
+		<!-- Custom js -->
+		<script type="text/javascript" src="js/script.js"></script>
+		
+    </body>
+</html>
