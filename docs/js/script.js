@@ -27,11 +27,11 @@ var Dimage;
 /*	Secreat Message & Donwload Image
 /* ========================================================================= */
 function encode(){
-	if(document.getElementById("Epesan").value.length >= 13){
+	if(document.getElementById("Epesan").value.length >= 160){
 		var data = steg.encode(document.getElementById("Epesan").value, Dimage);
 		download(data,"Encode.png");
 	}else{
-		alert("Pesan minimal 13 digit !!!");
+		alert("Pesan minimal 160 karakter !!!");
 	}
 }
 function download(uri, name) {
